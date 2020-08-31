@@ -95,6 +95,9 @@ margin-bottom: 50px; //so it doesn't get weird when scrolling to the bottom
       margin: 10px;
       padding-left: 10px;
       font-size: 1.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 160px;
     }
 
     .icons *{
