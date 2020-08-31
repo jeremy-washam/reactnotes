@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Map } from 'immutable';
 import './style.scss';
-
-// import marked from 'marked';
 import Note from './components/note';
 import InputBar from './components/input_bar';
 import * as db from './services/datastore';
