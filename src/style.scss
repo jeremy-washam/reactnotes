@@ -1,0 +1,162 @@
+/* General styles */
+html {
+  height: 100%;
+}
+
+/* 
+I used this to keep the background gradient from repeating:
+https://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats
+*/
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(#1e252c, black);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Input bar styles */
+.inputBar {
+  display: flex;
+  justify-content: center;
+  background-color: #14181c;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 100;
+
+  input {
+    width: 25%;
+    background-color: #2c3440;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    color: #6f6660;
+    padding-left: 10px;
+  }
+
+  input:focus{
+    background-color: white;
+    outline: none;
+    color: black;
+  }
+
+  p {
+    color: white;
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+  
+  button {
+    background-color: #00b020;
+    color: white;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 5px;
+    margin: 20px;
+    outline: none;
+
+    span{
+      margin-left: 5px;
+    }
+  }
+
+  button:hover {
+    background-color: #00911a;
+  }
+}
+
+/* Note styles */
+.note {
+width: 300px;
+background-color: black;
+color: #a0b0c1;
+position: absolute;
+border: 1px #3c3f41 solid;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 50px; //so it doesn't get weird when scrolling to the bottom 
+
+  .noteHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-height: 15%;
+    width: 100%;
+    background-color: #3b4753;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+
+    p {
+      margin: 10px;
+      font-size: 1.5rem;
+    }
+
+    .icons *{
+      margin-top: 3px;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 1.2rem;
+    }
+
+    textarea {
+      width: 150px;
+      height: 40px;
+      margin: 8px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      font-size: 1.5rem;
+      resize: none;
+    }
+  }
+
+  .noteBody {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      max-width: 260px;
+    }
+
+    p {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  textarea {
+    width: 260px;
+    height: 100px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+  
+  .drag {
+    cursor: grab;
+  }
+
+}
+
+/*
+Found this here:
+https://stackoverflow.com/questions/5394116/outline-radius
+*/
+.note:hover{
+  box-shadow: 0 0 0 3px #00b020;
+  transition: 0.2s;
+}
