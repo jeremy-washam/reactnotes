@@ -1,14 +1,14 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDIXJt2IydsJqcjO7mGfAo_jJEo30D5OGA',
-  authDomain: 'react-notes-743e5.firebaseapp.com',
-  databaseURL: 'https://react-notes-743e5.firebaseio.com',
-  projectId: 'react-notes-743e5',
-  storageBucket: 'react-notes-743e5.appspot.com',
-  messagingSenderId: '945888869362',
-  appId: '1:945888869362:web:a230f362af89082e34096b',
-  measurementId: 'G-G8QZFXM7NQ',
+  apiKey: 'AIzaSyDS0Op-Cy6AqZHAVuBkcGvQOcqWei1-JVM',
+  authDomain: 'reactnotes-c34fd.firebaseapp.com',
+  databaseURL: 'https://reactnotes-c34fd.firebaseio.com',
+  projectId: 'reactnotes-c34fd',
+  storageBucket: 'reactnotes-c34fd.appspot.com',
+  messagingSenderId: '411057911169',
+  appId: '1:411057911169:web:091983b5a2feb5f0976480',
+  measurementId: 'G-S8SLTX6JK1',
 };
   // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

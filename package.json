@@ -7,7 +7,7 @@
     "test": "eslint src",
     "build": "yarn clean; NODE_ENV=production webpack --colors",
     "clean": "rimraf dist",
-    "deploy": "yarn build; surge -p dist -d jeremywasham-cs52-darkmodenotes.surge.sh; yarn deploy"
+    "deploy": "yarn build; surge -p dist -d jeremywasham-cs52-darkmodenotes.surge.sh"
   },
   "repository": "https://github.com/dartmouth-cs52-20X/sa-reactintro-jeremy-washam.git",
   "author": "jeremy-washam <Jeremy.D.Washam.19@dartmouth.edu>",
